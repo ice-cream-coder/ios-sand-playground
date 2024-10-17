@@ -1,21 +1,25 @@
 import SwiftUI
 import Observation
 
+enum Matter {
+    case air, sand
+}
+
 @Observable
 class SandGameModel {
-    var grid: [[Bool]]
+    var grid: [[Matter]]
     let rows: Int
     let columns: Int
     
     init(rows: Int = 100, columns: Int = 60) {
         self.rows = rows
         self.columns = columns
-        self.grid = Array(repeating: Array(repeating: false, count: columns), count: rows)
+        self.grid = Array(repeating: Array(repeating: .air, count: columns), count: rows)
     }
     
     func addSandAt(row: Int, col: Int) {
         guard row >= 0 && row < rows && col >= 0 && col < columns else { return }
-        grid[row][col] = true
+        grid[row][col] = .sand
     }
     
     func updateSand() {
@@ -23,16 +27,16 @@ class SandGameModel {
         
         for row in (0..<rows-1).reversed() {
             for col in 0..<columns {
-                if grid[row][col] {
-                    if !grid[row + 1][col] {
-                        newGrid[row][col] = false
-                        newGrid[row + 1][col] = true
-                    } else if col > 0 && !grid[row + 1][col - 1] {
-                        newGrid[row][col] = false
-                        newGrid[row + 1][col - 1] = true
-                    } else if col < columns - 1 && !grid[row + 1][col + 1] {
-                        newGrid[row][col] = false
-                        newGrid[row + 1][col + 1] = true
+                if grid[row][col] == .sand {
+                    if !(grid[row + 1][col] == .sand) {
+                        newGrid[row][col] = .air
+                        newGrid[row + 1][col] = .sand
+                    } else if col > 0 && !(grid[row + 1][col - 1] == .sand) {
+                        newGrid[row][col] = .air
+                        newGrid[row + 1][col - 1] = .sand
+                    } else if col < columns - 1 && !(grid[row + 1][col + 1] == .sand) {
+                        newGrid[row][col] = .air
+                        newGrid[row + 1][col + 1] = .sand
                     }
                 }
             }
@@ -84,7 +88,7 @@ struct ContentView: View {
 }
 
 struct GridView: View {
-    let grid: [[Bool]]
+    let grid: [[Matter]]
     
     var body: some View {
         GeometryReader { geometry in
@@ -94,7 +98,7 @@ struct GridView: View {
                 
                 for (rowIndex, row) in grid.enumerated() {
                     for (colIndex, cell) in row.enumerated() {
-                        if cell {
+                        if cell == .sand {
                             let rect = CGRect(x: CGFloat(colIndex) * cellWidth,
                                               y: CGFloat(rowIndex) * cellHeight,
                                               width: cellWidth,
