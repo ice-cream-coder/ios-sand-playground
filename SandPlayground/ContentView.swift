@@ -2,11 +2,12 @@ import SwiftUI
 import Observation
 
 enum Matter {
-    case air, sand
+    case air, sand, water
 }
 
 @Observable
 class SandGameModel {
+    var selectedMatter = Matter.sand
     var grid: [[Matter]]
     let rows: Int
     let columns: Int
@@ -19,7 +20,7 @@ class SandGameModel {
     
     func addSandAt(row: Int, col: Int) {
         guard row >= 0 && row < rows && col >= 0 && col < columns else { return }
-        grid[row][col] = .sand
+        grid[row][col] = selectedMatter
     }
     
     func updateSand() {
@@ -28,15 +29,33 @@ class SandGameModel {
         for row in (0..<rows-1).reversed() {
             for col in 0..<columns {
                 if grid[row][col] == .sand {
-                    if !(grid[row + 1][col] == .sand) {
+                    if grid[row + 1][col] != .sand {
                         newGrid[row][col] = .air
                         newGrid[row + 1][col] = .sand
-                    } else if col > 0 && !(grid[row + 1][col - 1] == .sand) {
+                    } else if col > 0 && grid[row + 1][col - 1] != .sand {
                         newGrid[row][col] = .air
                         newGrid[row + 1][col - 1] = .sand
-                    } else if col < columns - 1 && !(grid[row + 1][col + 1] == .sand) {
+                    } else if col < columns - 1 && grid[row + 1][col + 1] != .sand {
                         newGrid[row][col] = .air
                         newGrid[row + 1][col + 1] = .sand
+                    }
+                }
+                if grid[row][col] == .water {
+                    if grid[row + 1][col] == .air {
+                        newGrid[row][col] = .air
+                        newGrid[row + 1][col] = .water
+                    } else if col > 0 && grid[row + 1][col - 1] == .air {
+                        newGrid[row][col] = .air
+                        newGrid[row + 1][col - 1] = .water
+                    } else if col < columns - 1 && grid[row + 1][col + 1] == .air {
+                        newGrid[row][col] = .air
+                        newGrid[row + 1][col + 1] = .water
+                    } else if col > 0 && grid[row][col - 1] == .air {
+//                        newGrid[row][col] = .air
+                        newGrid[row][col - 1] = .water
+                    } else if col < columns - 1 && grid[row][col + 1] == .air {
+//                        newGrid[row][col] = .air
+                        newGrid[row][col + 1] = .water
                     }
                 }
             }
@@ -67,6 +86,32 @@ struct ContentView: View {
                 )
         }
         .edgesIgnoringSafeArea(.all)
+        .overlay(alignment: .top) {
+            HStack {
+                if model.selectedMatter == .sand {
+                    Button(action: { model.selectedMatter = .sand }) {
+                        Text("Sand")
+                    }
+                    .buttonStyle(.borderedProminent)
+                } else {
+                    Button(action: { model.selectedMatter = .sand }) {
+                        Text("Sand")
+                    }
+                    .buttonStyle(.bordered)
+                }
+                if model.selectedMatter == .water {
+                    Button(action: { model.selectedMatter = .water }) {
+                        Text("Water")
+                    }
+                    .buttonStyle(.borderedProminent)
+                } else {
+                    Button(action: { model.selectedMatter = .water }) {
+                        Text("Water")
+                    }
+                    .buttonStyle(.bordered)
+                }
+            }
+        }
         .onAppear {
             startSimulation()
         }
@@ -109,7 +154,24 @@ struct GridView: View {
                 }
             }
             .fill(Color.yellow)
+            Path { path in
+                let cellWidth = geometry.size.width / CGFloat(grid[0].count)
+                let cellHeight = geometry.size.height / CGFloat(grid.count)
+                
+                for (rowIndex, row) in grid.enumerated() {
+                    for (colIndex, cell) in row.enumerated() {
+                        if cell == .water {
+                            let rect = CGRect(x: CGFloat(colIndex) * cellWidth,
+                                              y: CGFloat(rowIndex) * cellHeight,
+                                              width: cellWidth,
+                                              height: cellHeight)
+                            path.addRect(rect)
+                        }
+                    }
+                }
+            }
+            .fill(Color.blue)
         }
-        .background(Color.blue)
+        .background(Color.blue.opacity(0.2))
     }
 }
