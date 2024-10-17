@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		20CB58432CC1BCF3002D8CFC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 20CB58422CC1BCEE002D8CFC /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		20A46C4C2CB89E5B00B59C2A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,6 +39,7 @@
 		20A46C4B2CB89E5B00B59C2A /* SandPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20A46C552CB89E5B00B59C2A /* SandPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CB58392CC1BB34002D8CFC /* SandPlaygroundTestsOld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandPlaygroundTestsOld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CB58422CC1BCEE002D8CFC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -95,6 +100,7 @@
 		20A46C302CB89E5900B59C2A = {
 			isa = PBXGroup;
 			children = (
+				20CB58422CC1BCEE002D8CFC /* .gitignore */,
 				20A46C3B2CB89E5900B59C2A /* SandPlayground */,
 				20A46C4E2CB89E5B00B59C2A /* SandPlaygroundTests */,
 				20A46C582CB89E5B00B59C2A /* SandPlaygroundUITests */,
@@ -262,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20CB58432CC1BCF3002D8CFC /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
