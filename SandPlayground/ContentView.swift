@@ -1,46 +1,16 @@
 import SwiftUI
+import Observation
 
-struct ContentView: View {
-    @State var grid: [[Bool]]
-    @State private var timer: Timer?
+@Observable
+class SandGameModel {
+    var grid: [[Bool]]
+    let rows: Int
+    let columns: Int
     
-    let rows = 100
-    let columns = 60
-    
-    init() {
-        _grid = State(initialValue: Array(repeating: Array(repeating: false, count: columns), count: rows))
-    }
-    
-    var body: some View {
-        GeometryReader { geometry in
-            GridView(grid: grid)
-                .gesture(
-                    DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                        .onChanged { value in
-                            let row = Int(value.location.y / (geometry.size.height / CGFloat(rows)))
-                            let col = Int(value.location.x / (geometry.size.width / CGFloat(columns)))
-                            addSandAt(row: row, col: col)
-                        }
-                )
-        }
-        .edgesIgnoringSafeArea(.all)
-        .onAppear {
-            startSimulation()
-        }
-        .onDisappear {
-            stopSimulation()
-        }
-    }
-    
-    func startSimulation() {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
-            updateSand()
-        }
-    }
-    
-    func stopSimulation() {
-        timer?.invalidate()
-        timer = nil
+    init(rows: Int = 100, columns: Int = 60) {
+        self.rows = rows
+        self.columns = columns
+        self.grid = Array(repeating: Array(repeating: false, count: columns), count: rows)
     }
     
     func addSandAt(row: Int, col: Int) {
@@ -72,6 +42,47 @@ struct ContentView: View {
     }
 }
 
+struct ContentView: View {
+    @State private var model: SandGameModel
+    @State private var timer: Timer?
+    
+    init(model: SandGameModel = SandGameModel()) {
+        _model = State(initialValue: model)
+    }
+    
+    var body: some View {
+        GeometryReader { geometry in
+            GridView(grid: model.grid)
+                .gesture(
+                    DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                        .onChanged { value in
+                            let row = Int(value.location.y / (geometry.size.height / CGFloat(model.rows)))
+                            let col = Int(value.location.x / (geometry.size.width / CGFloat(model.columns)))
+                            model.addSandAt(row: row, col: col)
+                        }
+                )
+        }
+        .edgesIgnoringSafeArea(.all)
+        .onAppear {
+            startSimulation()
+        }
+        .onDisappear {
+            stopSimulation()
+        }
+    }
+    
+    func startSimulation() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { _ in
+            model.updateSand()
+        }
+    }
+    
+    func stopSimulation() {
+        timer?.invalidate()
+        timer = nil
+    }
+}
+
 struct GridView: View {
     let grid: [[Bool]]
     
@@ -96,11 +107,5 @@ struct GridView: View {
             .fill(Color.yellow)
         }
         .background(Color.blue)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
