@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		20A46C4C2CB89E5B00B59C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20A46C312CB89E5900B59C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20A46C382CB89E5900B59C2A;
+			remoteInfo = SandPlayground;
+		};
+		20A46C562CB89E5B00B59C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20A46C312CB89E5900B59C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20A46C382CB89E5900B59C2A;
+			remoteInfo = SandPlayground;
+		};
+		20CB583D2CC1BB34002D8CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20A46C312CB89E5900B59C2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20A46C382CB89E5900B59C2A;
+			remoteInfo = SandPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20A46C392CB89E5900B59C2A /* SandPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A46C4B2CB89E5B00B59C2A /* SandPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20A46C552CB89E5B00B59C2A /* SandPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20CB58392CC1BB34002D8CFC /* SandPlaygroundTestsOld.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SandPlaygroundTestsOld.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		20A46C3B2CB89E5900B59C2A /* SandPlayground */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SandPlayground;
+			sourceTree = "<group>";
+		};
+		20A46C4E2CB89E5B00B59C2A /* SandPlaygroundTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SandPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		20A46C582CB89E5B00B59C2A /* SandPlaygroundUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SandPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+		20CB583A2CC1BB34002D8CFC /* SandPlaygroundTestsOld */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SandPlaygroundTestsOld;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20A46C362CB89E5900B59C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A46C482CB89E5B00B59C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A46C522CB89E5B00B59C2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CB58362CC1BB34002D8CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20A46C302CB89E5900B59C2A = {
+			isa = PBXGroup;
+			children = (
+				20A46C3B2CB89E5900B59C2A /* SandPlayground */,
+				20A46C4E2CB89E5B00B59C2A /* SandPlaygroundTests */,
+				20A46C582CB89E5B00B59C2A /* SandPlaygroundUITests */,
+				20CB583A2CC1BB34002D8CFC /* SandPlaygroundTestsOld */,
+				20A46C3A2CB89E5900B59C2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20A46C3A2CB89E5900B59C2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20A46C392CB89E5900B59C2A /* SandPlayground.app */,
+				20A46C4B2CB89E5B00B59C2A /* SandPlaygroundTests.xctest */,
+				20A46C552CB89E5B00B59C2A /* SandPlaygroundUITests.xctest */,
+				20CB58392CC1BB34002D8CFC /* SandPlaygroundTestsOld.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20A46C382CB89E5900B59C2A /* SandPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20A46C5F2CB89E5B00B59C2A /* Build configuration list for PBXNativeTarget "SandPlayground" */;
+			buildPhases = (
+				20A46C352CB89E5900B59C2A /* Sources */,
+				20A46C362CB89E5900B59C2A /* Frameworks */,
+				20A46C372CB89E5900B59C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				20A46C3B2CB89E5900B59C2A /* SandPlayground */,
+			);
+			name = SandPlayground;
+			packageProductDependencies = (
+			);
+			productName = SandPlayground;
+			productReference = 20A46C392CB89E5900B59C2A /* SandPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20A46C4A2CB89E5B00B59C2A /* SandPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20A46C622CB89E5B00B59C2A /* Build configuration list for PBXNativeTarget "SandPlaygroundTests" */;
+			buildPhases = (
+				20A46C472CB89E5B00B59C2A /* Sources */,
+				20A46C482CB89E5B00B59C2A /* Frameworks */,
+				20A46C492CB89E5B00B59C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20A46C4D2CB89E5B00B59C2A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				20A46C4E2CB89E5B00B59C2A /* SandPlaygroundTests */,
+			);
+			name = SandPlaygroundTests;
+			packageProductDependencies = (
+			);
+			productName = SandPlaygroundTests;
+			productReference = 20A46C4B2CB89E5B00B59C2A /* SandPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20A46C542CB89E5B00B59C2A /* SandPlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20A46C652CB89E5B00B59C2A /* Build configuration list for PBXNativeTarget "SandPlaygroundUITests" */;
+			buildPhases = (
+				20A46C512CB89E5B00B59C2A /* Sources */,
+				20A46C522CB89E5B00B59C2A /* Frameworks */,
+				20A46C532CB89E5B00B59C2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20A46C572CB89E5B00B59C2A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				20A46C582CB89E5B00B59C2A /* SandPlaygroundUITests */,
+			);
+			name = SandPlaygroundUITests;
+			packageProductDependencies = (
+			);
+			productName = SandPlaygroundUITests;
+			productReference = 20A46C552CB89E5B00B59C2A /* SandPlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		20CB58382CC1BB34002D8CFC /* SandPlaygroundTestsOld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20CB583F2CC1BB34002D8CFC /* Build configuration list for PBXNativeTarget "SandPlaygroundTestsOld" */;
+			buildPhases = (
+				20CB58352CC1BB34002D8CFC /* Sources */,
+				20CB58362CC1BB34002D8CFC /* Frameworks */,
+				20CB58372CC1BB34002D8CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20CB583E2CC1BB34002D8CFC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				20CB583A2CC1BB34002D8CFC /* SandPlaygroundTestsOld */,
+			);
+			name = SandPlaygroundTestsOld;
+			packageProductDependencies = (
+			);
+			productName = SandPlaygroundTestsOld;
+			productReference = 20CB58392CC1BB34002D8CFC /* SandPlaygroundTestsOld.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20A46C312CB89E5900B59C2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					20A46C382CB89E5900B59C2A = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					20A46C4A2CB89E5B00B59C2A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 20A46C382CB89E5900B59C2A;
+					};
+					20A46C542CB89E5B00B59C2A = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 20A46C382CB89E5900B59C2A;
+					};
+					20CB58382CC1BB34002D8CFC = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 20A46C382CB89E5900B59C2A;
+					};
+				};
+			};
+			buildConfigurationList = 20A46C342CB89E5900B59C2A /* Build configuration list for PBXProject "SandPlayground" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20A46C302CB89E5900B59C2A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 20A46C3A2CB89E5900B59C2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20A46C382CB89E5900B59C2A /* SandPlayground */,
+				20A46C4A2CB89E5B00B59C2A /* SandPlaygroundTests */,
+				20A46C542CB89E5B00B59C2A /* SandPlaygroundUITests */,
+				20CB58382CC1BB34002D8CFC /* SandPlaygroundTestsOld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20A46C372CB89E5900B59C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A46C492CB89E5B00B59C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A46C532CB89E5B00B59C2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CB58372CC1BB34002D8CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20A46C352CB89E5900B59C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A46C472CB89E5B00B59C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A46C512CB89E5B00B59C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20CB58352CC1BB34002D8CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20A46C4D2CB89E5B00B59C2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20A46C382CB89E5900B59C2A /* SandPlayground */;
+			targetProxy = 20A46C4C2CB89E5B00B59C2A /* PBXContainerItemProxy */;
+		};
+		20A46C572CB89E5B00B59C2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20A46C382CB89E5900B59C2A /* SandPlayground */;
+			targetProxy = 20A46C562CB89E5B00B59C2A /* PBXContainerItemProxy */;
+		};
+		20CB583E2CC1BB34002D8CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20A46C382CB89E5900B59C2A /* SandPlayground */;
+			targetProxy = 20CB583D2CC1BB34002D8CFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20A46C5D2CB89E5B00B59C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20A46C5E2CB89E5B00B59C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20A46C602CB89E5B00B59C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SandPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = WV25CK8N4P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ice-cream-coder.SandPlayground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		20A46C612CB89E5B00B59C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SandPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = WV25CK8N4P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ice-cream-coder.SandPlayground";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		20A46C632CB89E5B00B59C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WV25CK8N4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ice-cream-coder.SandPlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandPlayground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SandPlayground";
+			};
+			name = Debug;
+		};
+		20A46C642CB89E5B00B59C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WV25CK8N4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ice-cream-coder.SandPlaygroundTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandPlayground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SandPlayground";
+			};
+			name = Release;
+		};
+		20A46C662CB89E5B00B59C2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WV25CK8N4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ice-cream-coder.SandPlaygroundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SandPlayground;
+			};
+			name = Debug;
+		};
+		20A46C672CB89E5B00B59C2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WV25CK8N4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ice-cream-coder.SandPlaygroundUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SandPlayground;
+			};
+			name = Release;
+		};
+		20CB58402CC1BB34002D8CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WV25CK8N4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ice-cream-coder.SandPlaygroundTestsOld";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandPlayground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SandPlayground";
+			};
+			name = Debug;
+		};
+		20CB58412CC1BB34002D8CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WV25CK8N4P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ice-cream-coder.SandPlaygroundTestsOld";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SandPlayground.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SandPlayground";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20A46C342CB89E5900B59C2A /* Build configuration list for PBXProject "SandPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20A46C5D2CB89E5B00B59C2A /* Debug */,
+				20A46C5E2CB89E5B00B59C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20A46C5F2CB89E5B00B59C2A /* Build configuration list for PBXNativeTarget "SandPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20A46C602CB89E5B00B59C2A /* Debug */,
+				20A46C612CB89E5B00B59C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20A46C622CB89E5B00B59C2A /* Build configuration list for PBXNativeTarget "SandPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20A46C632CB89E5B00B59C2A /* Debug */,
+				20A46C642CB89E5B00B59C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20A46C652CB89E5B00B59C2A /* Build configuration list for PBXNativeTarget "SandPlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20A46C662CB89E5B00B59C2A /* Debug */,
+				20A46C672CB89E5B00B59C2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20CB583F2CC1BB34002D8CFC /* Build configuration list for PBXNativeTarget "SandPlaygroundTestsOld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20CB58402CC1BB34002D8CFC /* Debug */,
+				20CB58412CC1BB34002D8CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20A46C312CB89E5900B59C2A /* Project object */;
+}
