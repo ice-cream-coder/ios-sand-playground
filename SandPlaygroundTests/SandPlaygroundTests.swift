@@ -13,6 +13,9 @@ struct SandPlaygroundTests {
     
     @Test("Initial grid state is empty and correct size")
     func initialGridState() throws {
+        let optionalString: String? = "Hello, World!"
+        let string = try #require(optionalString)
+        
         #expect(model.grid.count == model.rows)
         #expect(model.grid[0].count == model.columns)
         
